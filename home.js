@@ -42,6 +42,21 @@ function handleToggle(id) {
     document.getElementById(id).style.display = "block";
 }
 
+//function to toggle buttons//
+function handleButtonToggle(id)
+{
+
+    const formBtns=document.getElementsByClassName("form-btn");
+
+    for(const btn of formBtns)
+    {
+        btn.classList.remove("border-[#0874f2]","bg-[#0874f20d]");
+        btn.classList.add("border-gray-300");
+    }
+    document.getElementById(id).classList.remove("border-gray-300");
+    document.getElementById(id).classList.add("border-[#0874f2]","bg-[#0874f20d]");
+}
+
 // Add money feature//
 document.getElementById("add-money-btn").addEventListener('click', function (e) {
     e.preventDefault();
@@ -111,55 +126,24 @@ document.getElementById("withdraw-btn").addEventListener("click", function (e) {
 document.getElementById("add-button").addEventListener("click", function () {
 
     handleToggle("add-money-parent");
-
-    const formBtns=document.getElementsByClassName("form-btn");
-
-    for(const btn of formBtns)
-    {
-        btn.classList.remove("border-[#0874f2]","bg-[#0874f20d]");
-        btn.classList.add("border-gray-300");
-    }
-    document.getElementById("add-button").classList.remove("border-gray-300");
-    document.getElementById("add-button").classList.add("border-[#0874f2]","bg-[#0874f20d]");
+    handleButtonToggle("add-button");
 })
 
 document.getElementById("cash-out-button").addEventListener("click", function () {
 
      handleToggle("cash-out-parent");
      
-     const formBtns=document.getElementsByClassName("form-btn");
-     for(const btn of formBtns)
-     {
-         btn.classList.remove("border-[#0874f2]","bg-[#0874f20d]");
-         btn.classList.add("border-gray-300");
-     }
-     document.getElementById("cash-out-button").classList.remove("border-gray-300");
-     document.getElementById("cash-out-button").classList.add("border-[#0874f2]","bg-[#0874f20d]");
+     handleButtonToggle("cash-out-button");
 })
 
 document.getElementById("transfer-button").addEventListener("click", function () {
 
      handleToggle("transfer-money-parent");
      
-     const formBtns=document.getElementsByClassName("form-btn");
-     for(const btn of formBtns)
-     {
-         btn.classList.remove("border-[#0874f2]","bg-[#0874f20d]");
-         btn.classList.add("border-gray-300");
-     }
-     document.getElementById("transfer-button").classList.remove("border-gray-300");
-     document.getElementById("transfer-button").classList.add("border-[#0874f2]","bg-[#0874f20d]");
+     handleButtonToggle("transfer-button");
 })
 
 document.getElementById("bonus-button").addEventListener("click", function () {
      handleToggle("get-money-parent");
-     
-     const formBtns=document.getElementsByClassName("form-btn");
-     for(const btn of formBtns)
-     {
-         btn.classList.remove("border-[#0874f2]","bg-[#0874f20d]");
-         btn.classList.add("border-gray-300");
-     }
-     document.getElementById("bonus-button").classList.remove("border-gray-300");
-     document.getElementById("bonus-button").classList.add("border-[#0874f2]","bg-[#0874f20d]");
+     handleButtonToggle("bonus-button");
 })
