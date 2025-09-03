@@ -66,7 +66,7 @@
                 <h2>Transfer Money</h2>
             </div>
 
-            <div class="rounded-xl border-2  text-center p-3">
+            <div id="bonus-button" class="rounded-xl border-2  text-center p-3">
                 <img class="mx-auto" src="./assets/bonus1.png" alt="">
                 <h2>Get Bonus</h2>
             </div>
@@ -157,9 +157,59 @@
         </div>
         <!--Transfer Money-->
 
-        <div class="form" id="transfer-money-parent" >
+        <div class="form" id="transfer-money-parent">
             <h1 class="font-bold my-4">Transfer Money</h1>
+
+            <form action="" class="bg-white rounded-2xl p-8">
+                <div>
+                    <label class="font-semibold" for="User Account Number">User Account Number</label><br>
+
+                    <input id="agent-number" type="text" placeholder="Enter 11 Digit Number"
+                        class="input bg-[#f4f5f7] mt-3 rounded-3xl p-2 w-full" />
+                </div>
+
+                <div class="mt-2">
+                    <label class="font-semibold" for="Mobile Number">Amount</label><br>
+
+                    <input id="withdraw-amount" type="text" placeholder="Enter amount to Transfer"
+                        class="input bg-[#f4f5f7] mt-3 rounded-3xl p-2 w-full" />
+                </div>
+
+                <div class="mt-2">
+                    <label class="font-semibold" for="Mobile Number">Pin Number</label><br>
+
+                    <input id="cashout-pin" type="text" placeholder="Enter 4 Digit pin Number"
+                        class="input bg-[#f4f5f7] mt-3 rounded-3xl p-2 w-full" />
+                </div>
+                <button id="withdraw-btn" type="button"
+                    class="btn bg-[#0874f2] text-white mt-5 w-full rounded-3xl bg-[#0874f2] border-none">Send Now
+                </button>
+            </form>
+
         </div>
+
+        <!--get bonus-->
+        <div class="form" id="get-money-parent">
+            <h1 class="font-bold my-4">Get Bonus</h1>
+
+            <form action="" class="bg-white rounded-2xl p-8">
+                <div>
+                    <label class="font-semibold" for="Enter Bonus Coupon">Enter Bonus coupon </label><br>
+
+                    <input id="agent-number" type="text" placeholder="Enter your coupon"
+                        class="input bg-[#f4f5f7] mt-3 rounded-3xl p-2 w-full" />
+                </div>
+
+               
+                <button id="withdraw-btn" type="button"
+                    class="btn bg-[#0874f2] text-white mt-5 w-full rounded-3xl bg-[#0874f2] border-none">Get Bonus 
+                </button>
+            </form>
+
+        </div>
+
+        <!--Pay Bill-->
+        
 
     </div>
     <!--Javascript-->
