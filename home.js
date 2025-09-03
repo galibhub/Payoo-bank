@@ -147,3 +147,13 @@ document.getElementById("bonus-button").addEventListener("click", function () {
      handleToggle("get-money-parent");
      handleButtonToggle("bonus-button");
 })
+
+// Hide all form sections on page load
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById("add-money-parent").style.display = "none";
+    document.getElementById("cash-out-parent").style.display = "none";
+    document.getElementById("transfer-money-parent").style.display = "none";
+    document.getElementById("get-money-parent").style.display = "none";
+    document.getElementById("pay-bill-parent").style.display = "none";
+    document.getElementById("transaction-parent").style.display = "none";
+})
